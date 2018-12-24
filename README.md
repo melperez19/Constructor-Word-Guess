@@ -22,5 +22,5 @@ The file containing the logic for the course of the game, which depends on Word.
 * Randomly selects a word and uses the Word constructor to store it
 * Prompts the user for each guess and keeps track of the user's remaining guesses
 
-*This project is still in production to become fully functional.
+                                *This project is still in production to become fully functional.*
  

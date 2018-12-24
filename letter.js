@@ -12,8 +12,8 @@ function Letter(letter) {
     // HINT: If you name your letter's display function toString, JavaScript will call that function 
     // automatically whenever casting that object to a string
 
-    this.toString = function () {
-        if (this.letterGuessed === false) {
+    Letter.prototype.toString = function () {
+        if (!this.letterGuessed) {
             return this.letter;
         } else {
             return "_";
@@ -24,13 +24,13 @@ function Letter(letter) {
     // A function that takes a character as an argument and checks it against the underlying character, 
     // updating the stored boolean value to true if it was guessed correctly
 
-    this.guess = function (guess) {
+    Letter.prototype.guess = function (guess) {
         if (guess.toLowerCase() === this.letter.toLowerCase()) {
             this.letterGuessed = true;
             return true;
         } else {
             return false;
-            
+
         }
     }
 }
